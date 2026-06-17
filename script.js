@@ -1,5 +1,12 @@
 // Declare variables below to save the different divs of your story.
+let begin = document.querySelector('.begin');
+let openPage = document.querySelector('.open-page')
 
+begin.addEventListener('click',
+    function () {
+        openPage.style.display = 'none'
+    }
+);
 
 
 

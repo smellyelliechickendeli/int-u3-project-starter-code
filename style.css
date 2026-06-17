@@ -32,6 +32,11 @@ body {
     margin-bottom: 20px;
 }
 
+/* open page*/
+.open-page{
+    z-index: 400;
+}
+
 /* Style the story opening container */
 .story-opening {
     background-color: #fff;
