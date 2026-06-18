@@ -32,9 +32,24 @@ body {
     margin-bottom: 20px;
 }
 
-/* open page*/
+    /* open page*/
 .open-page{
     z-index: 400;
+}
+
+    /*first page*/
+.primer-page{
+    z-index: 401;
+}
+
+    /*boy names*/
+.name-boy{
+    z-index:402;
+}
+
+    /*girl names*/
+.name-girl{
+    z-index: 402;
 }
 
 /* Style the story opening container */
