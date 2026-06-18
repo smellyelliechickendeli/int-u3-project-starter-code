@@ -12,6 +12,12 @@ let chuzGirl = document.querySelector('.chuz-girl');
 let nutleigh=document.querySelector('.nut1-butt');
 let nutleigh2=document.querySelector('.nut2-butt');
 let yo6Nut = document.querySelector('.yo-6-nut');
+let noAttend1 = document.querySelector('.no-attend-storyline-girl');
+let yes = document.querySelector('.yes-attend');
+let no = document.querySelector('.no-attend');
+let noBail = document.querySelector('.no-bail');
+let inJail = document.querySelector('.in-jail');
+let retry = document.querySelector('.retry');
 
 //page displays
 primerPagina.style.display = 'none';
@@ -21,6 +27,10 @@ chuzBoy.style.display='none';
 chuzGirl.style.display='none';
 thinkGender.style.display='none';
 yo6Nut.style.display='none';
+noAttend1.style.display='none';
+noBail.style.display='none';
+inJail.style.display='none';
+retry.style.dispaly='none';
 
 //on clicks
 begin.addEventListener('click',
@@ -35,6 +45,7 @@ girl.addEventListener('click',
         thinkGender.style.display='block';
         nameGirl.style.display='block';
         chuzGirl.style.display='block';
+
     });
 
 boy.addEventListener('click',
@@ -55,7 +66,7 @@ thinkGender.addEventListener('click',
         thinkGender.style.display='none';
     });
 
-//nut's story
+//boy nut's story
 nutleigh.addEventListener('click',
     function(){
         nameBoy.style.display='none';
@@ -66,6 +77,7 @@ nutleigh.addEventListener('click',
         yo6Nut.style.display='block';
     });
 
+    //girl nut's story
 nutleigh2.addEventListener('click',
     function(){
         nameBoy.style.display='none';
@@ -75,6 +87,27 @@ nutleigh2.addEventListener('click',
         thinkGender.style.display='none';
         yo6Nut.style.display='block';
     });
+
+no.addEventListener('click',
+    function(){
+        yo6Nut.style.display='none';
+        noAttend1.style.display='block';
+        noBail.style.display='inline';
+    });
+
+noBail.addEventListener('click',
+    function(){
+        noAttend1.style.display='none';
+        inJail.style.display='block'
+    });
+retry.addEventListener('click',
+    function(){
+        openPage.style.display='block';
+        inJail.style.display='none';
+    }
+)
+
+
 
 
 
