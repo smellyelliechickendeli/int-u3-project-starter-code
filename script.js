@@ -9,8 +9,10 @@ let nameBoy = document.querySelector('.name-boy');
 let nameGirl = document.querySelector('.name-girl');
 let chuzBoy = document.querySelector('.chuz-boy');
 let chuzGirl = document.querySelector('.chuz-girl');
-let nutleigh=document.querySelector('.nut1-butt');
-let nutleigh2=document.querySelector('.nut2-butt');
+let nutleigh=document.querySelector('.nut1-butt'); //boy nutleigh
+let nutleigh2=document.querySelector('.nut2-butt'); //girl nutleigh
+
+//girl nutleigh
 let yo6Nut = document.querySelector('.yo-6-nut');
 let noAttend1 = document.querySelector('.no-attend-storyline-girl');
 let yes = document.querySelector('.yes-attend');
@@ -18,6 +20,16 @@ let no = document.querySelector('.no-attend');
 let noBail = document.querySelector('.no-bail');
 let inJail = document.querySelector('.in-jail');
 let retry = document.querySelector('.retry');
+
+//boy nutleigh
+let yo6Nut2 = document.querySelector('.yo-6-nut2')
+let noAttend2 = document.querySelector('.no-attend-storyline-boy');
+let inJail2 = document.querySelector('.in-jail2');
+let yes2 = document.querySelector('.yes-attend2');
+let no2 = document.querySelector('.no-attend2');
+let noBail2 = document.querySelector('.no-bail2');
+let retry2 = document.querySelector('.retry2');
+
 
 //page displays
 primerPagina.style.display = 'none';
@@ -31,6 +43,9 @@ noAttend1.style.display='none';
 noBail.style.display='none';
 inJail.style.display='none';
 retry.style.dispaly='none';
+yo6Nut2.style.display='none';
+noAttend2.style.display='none';
+inJail2.style.display='none';
 
 //on clicks
 begin.addEventListener('click',
@@ -74,8 +89,26 @@ nutleigh.addEventListener('click',
         chuzBoy.style.display='none';
         chuzGirl.style.display='none';
         thinkGender.style.display='none';
-        yo6Nut.style.display='block';
+        yo6Nut2.style.display='block';
     });
+    no2.addEventListener('click',
+    function(){
+        yo6Nut2.style.display='none';
+        noAttend2.style.display='block';
+        noBail2.style.display='inline';
+    });
+
+noBail2.addEventListener('click',
+    function(){
+        noAttend2.style.display='none';
+        inJail2.style.display='block'
+    });
+retry2.addEventListener('click',
+    function(){
+        openPage.style.display='block';
+        inJail2.style.display='none';
+    }
+)
 
     //girl nut's story
 nutleigh2.addEventListener('click',
