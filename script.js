@@ -20,6 +20,7 @@ let no = document.querySelector('.no-attend');
 let noBail = document.querySelector('.no-bail');
 let inJail = document.querySelector('.in-jail');
 let retry = document.querySelector('.retry');
+let outJail = document.querySelector('.out-jail')
 
 //boy nutleigh
 let yo6Nut2 = document.querySelector('.yo-6-nut2')
@@ -29,7 +30,7 @@ let yes2 = document.querySelector('.yes-attend2');
 let no2 = document.querySelector('.no-attend2');
 let noBail2 = document.querySelector('.no-bail2');
 let retry2 = document.querySelector('.retry2');
-
+let outJail2 = document.querySelector('.out-jail2');
 
 //page displays
 primerPagina.style.display = 'none';
@@ -46,6 +47,8 @@ retry.style.dispaly='none';
 yo6Nut2.style.display='none';
 noAttend2.style.display='none';
 inJail2.style.display='none';
+outJail2.style.display='none';
+outJail.style.display='none';
 
 //on clicks
 begin.addEventListener('click',
@@ -103,10 +106,16 @@ noBail2.addEventListener('click',
         noAttend2.style.display='none';
         inJail2.style.display='block'
     });
+
 retry2.addEventListener('click',
     function(){
         openPage.style.display='block';
         inJail2.style.display='none';
+    });
+
+outJail2.addEventListener('click', 
+    function (){
+        
     }
 )
 
@@ -139,6 +148,8 @@ retry.addEventListener('click',
         inJail.style.display='none';
     }
 )
+
+
 
 
 
