@@ -27,29 +27,30 @@ body {
 
 /* Style the title of your story */
 .title {
-    font-size: 24px;
+    font-size: 40px;
     font-weight: bold;
     margin-bottom: 20px;
 }
 
     /* open page*/
 .open-page{
-    z-index: 400;
 }
 
     /*first page*/
 .primer-page{
-    z-index: 401;
 }
+
+
+
+/*TEXT SHOWING UP*/
+
 
     /*boy names*/
 .name-boy{
-    z-index:402;
 }
 
     /*girl names*/
 .name-girl{
-    z-index: 402;
 }
 
 /* Style the story opening container */
@@ -78,24 +79,25 @@ body {
 button {
     font-size: 16px;
     padding: 10px 20px;
-    margin: 10px;
+    margin: auto;
     background-color: #007bff;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.4s ease;
 }
 
 button:hover {
     background-color: #0056b3;
+    transform: scale(1.07);
 }
 
 .rethink-gender{
     font-size: 16px;
     padding: 10px 20px;
     margin: 10px;
-    background-color: #9193a9;
+    background-color: #e3e4f0;
     color: #fff;
     border: none;
     border-radius: 5px;
