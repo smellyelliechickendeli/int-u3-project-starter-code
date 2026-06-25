@@ -15,12 +15,12 @@ html,
 body {
     margin: 0;
     padding: 0;
+    background-color: rgb(244, 236, 224);
 }
 
 /* Style the body with a background color or image if desired */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
     text-align: center;
     padding: 20px;
 }
@@ -80,7 +80,7 @@ button {
     font-size: 16px;
     padding: 10px 20px;
     margin: auto;
-    background-color: #007bff;
+    background-color: #862d6e;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -89,7 +89,7 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #5f1a4c;
     transform: scale(1.07);
 }
 
@@ -97,7 +97,7 @@ button:hover {
     font-size: 16px;
     padding: 10px 20px;
     margin: 10px;
-    background-color: #e3e4f0;
+    background-color: rgb(221, 213, 200);
     color: #fff;
     border: none;
     border-radius: 5px;

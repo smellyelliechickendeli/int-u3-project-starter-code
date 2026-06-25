@@ -20,6 +20,7 @@ let nameBoy = document.querySelector('.name-boy');
 let nameGirl = document.querySelector('.name-girl');
 let chuzBoy = document.querySelector('.chuz-boy');
 let chuzGirl = document.querySelector('.chuz-girl');
+
 let nutleigh=document.querySelector('.nut1-butt'); //BOY nutleigh time flies
     let flyingTime2=document.querySelector('.time-flies-boy')
     flyingTime2.style.display='none';
@@ -37,8 +38,46 @@ let nutleigh2=document.querySelector('.nut2-butt'); //GIRL nutleigh time flies
     cheeseGirlattend.style.display='none';
 
 
+
+
 //other stories
-let names=[document.querySelector('.ellie-butt'), document.querySelector('.stephanie-butt'), document.querySelector('avantika-butt'), document.querySelector('harold-butt'), document.querySelector('alex-butt')] 
+let ellieButton = document.querySelector('.ellie-butt');
+let stephButton = document.querySelector('.stephanie-butt');
+let avantikButton = document.querySelector('.avantika-butt');
+let harButton = document.querySelector('.harold-butt');
+let alexButton = document.querySelector('.alex-butt');
+
+let henryButton = document.querySelector('.henry-butt');
+let henryBack = document.querySelector('.henry-back');
+let henryToe = document.querySelector('.henry-toe');
+
+    let pageOne = document.querySelector('.page-1');
+    let showOne = document.querySelector('.show-1');
+    let showTwo = document.querySelector('.show-2');
+    let showThree = document.querySelector('.show-3');
+    let yesInvest = document.querySelector('.yes-invest');
+        yesInvest.style.display='none';
+    let dontInvest = document.querySelector('.no-invest');
+        dontInvest.style.display='none';
+
+let investing = document.querySelector('.investing');
+    investing.style.display='none';
+let money = document.querySelector('.money');
+let submit = document.querySelector('.submit');
+let inpout = document.querySelector('.inpout');
+
+let tewCheap = document.querySelector('.too-cheap');
+    tewCheap.style.display='none';
+let retryMoney = document.querySelector('.money-retry');
+    retryMoney.style.display='none';
+let moneyReas = document.querySelector('.money-reason');
+    moneyReas.style.display='none';
+let overMoney = document.querySelector('.money-over');
+    overMoney.style.display='none';
+let noMoneylose = document.querySelector('.noMoneylose');
+    noMoneylose.style.display='none';
+
+
 
 
 //GIRL NUTLEIGH
@@ -208,7 +247,218 @@ thinkGender.addEventListener('click',
         thinkGender.style.display='none';
     });
 
-//everyone else stories
+
+
+
+
+
+//eEVERYONE ELSE!!!!!!!!! stories
+
+
+
+henryButton.addEventListener('click', function(){
+    chuzBoy.style.display='none';
+    chuzGirl.style.display='none';
+    nameBoy.style.display='none';
+    nameGirl.style.display='none';
+    thinkGender.style.display='none';
+    henryToe.style.display='block';
+    henryBack.style.display='block';
+});
+
+henryBack.addEventListener('click', function(){
+    henryToe.style.display='none';
+    openPage.style.display='block';
+});
+
+
+
+
+ellieButton.addEventListener('click', function(){
+    let names = 'ellieleigh';
+    pageOne.style.display='block';
+    chuzBoy.style.display='none';
+    chuzGirl.style.display='none';
+    nameBoy.style.display='none';
+    nameGirl.style.display='none';
+    thinkGender.style.display='none';
+    setTimeout(() => {
+        showOne.innerHTML= 'at the ripe age of 8, ' + names + ' takes up content creation.';}, 
+        1000);
+    setTimeout(() => {
+        showTwo.innerHTML= names + ' wants to make it big mystery unboxing.';},
+        2000);
+    setTimeout(() => {
+        showThree.innerHTML = 'do you want to give her money?';},
+        3100);
+    setTimeout(() => {
+        yesInvest.style.display='inline-block';
+        dontInvest.style.display='inline-block';},
+        3900);
+    document.appendChild('showOne');
+    document.appendChild('showTwo');
+    document.appendChild('showThree');
+    })
+
+yesInvest.addEventListener('click', function(){
+    pageOne.style.display='none';
+    yesInvest.style.display='none';
+    dontInvest.style.display='none';
+    investing.style.display='block';
+    inpout.style.display='block';
+    submit.style.display='block';
+});
+submit.addEventListener('click', function(){
+        if (inpout<=4000){
+            investing.style.display='none';
+            tewCheap.style.display='block';
+            overMoney.style.display='block';
+            moneyReas.style.display='block';
+            retryMoney.style.display='block';
+        } else if (inpout>4000 && inpout<=9000){
+            investing.style.display='none';
+            overMoney.style.display='block';
+            moneyReas.style.display='block';
+            overMoney.innerHTML='yay!';
+            moneyReas.innerHTML=names + ' goes d1 thanks to your money!';
+            tewCheap.style.display='block';
+            retryMoney.style.display='block';
+        } else if (inpout > 9000 && inpout<=10000){
+            investing.style.display='none';
+            overMoney.innerHTML='woohoo!'
+            moneyReas.innerHTML=names + ' she is a pro thanks to your money!'
+            tewCheap.style.display='block';
+            retryMoney.style.display='block';
+        } else {
+            overMoney.style.display='block';
+            retryMoney.style.display='block';
+        }
+});
+
+retryMoney.addEventListener('click', function(){
+    tewCheap.style.display='none';
+    openPage.style.display='block';
+});
+
+
+
+dontInvest.addEventListener('click', function(){
+    pageOne.style.display='none';
+    noMoneylose.style.display='block';
+    retryMoney.style.display='block';
+
+});
+
+
+
+stephButton.addEventListener('click', function(){
+    let names = 'stephanieleigh';
+    pageOne.style.display='block';
+    chuzBoy.style.display='none';
+    chuzGirl.style.display='none';
+    nameBoy.style.display='none';
+    nameGirl.style.display='none';
+    thinkGender.style.display='none';
+    setTimeout(() => {
+        showOne.innerHTML= 'at the ripe age of 8, ' + names + ' takes up content creation.';}, 
+        1000);
+    setTimeout(() => {
+        showTwo.innerHTML= names + ' wants to make it big mystery unboxing.';},
+        2000);
+    setTimeout(() => {
+        showThree.innerHTML = 'do you want to give her money?';},
+        3100);
+    setTimeout(() => {
+        yesInvest.style.display='inline-block';
+        dontInvest.style.display='inline-block';},
+        3900);
+    document.appendChild('showOne');
+    document.appendChild('showTwo');
+    document.appendChild('showThree');
+    });
+
+avantikButton.addEventListener('click', function(){
+    let names = 'avantikaleigh';
+    pageOne.style.display='block';
+    chuzBoy.style.display='none';
+    chuzGirl.style.display='none';
+    nameBoy.style.display='none';
+    nameGirl.style.display='none';
+    thinkGender.style.display='none';
+    setTimeout(() => {
+        showOne.innerHTML= 'at the ripe age of 8, ' + names + ' takes up content creation.';}, 
+        1000);
+    setTimeout(() => {
+        showTwo.innerHTML= names + ' wants to make it big mystery unboxing.';},
+        2000);
+    setTimeout(() => {
+        showThree.innerHTML = 'do you want to give her money?';},
+        3100);
+    setTimeout(() => {
+        yesInvest.style.display='inline-block';
+        dontInvest.style.display='inline-block';},
+        3900);
+    document.appendChild('showOne');
+    document.appendChild('showTwo');
+    document.appendChild('showThree');
+});
+
+    
+harButton.addEventListener('click', function(){
+    let names = 'haroldleigh';
+    pageOne.style.display='block';
+    chuzBoy.style.display='none';
+    chuzGirl.style.display='none';
+    nameBoy.style.display='none';
+    nameGirl.style.display='none';
+    thinkGender.style.display='none';
+    setTimeout(() => {
+        showOne.innerHTML= 'at the ripe age of 8, ' + names + ' takes up content creation.';}, 
+        1000);
+    setTimeout(() => {
+        showTwo.innerHTML= names + ' wants to make it big mystery unboxing.';},
+        2000);
+    setTimeout(() => {
+        showThree.innerHTML = 'do you want to give him money?';},
+        3100);
+    setTimeout(() => {
+        yesInvest.style.display='inline-block';
+        dontInvest.style.display='inline-block';},
+        3900);
+    document.appendChild('showOne');
+    document.appendChild('showTwo');
+    document.appendChild('showThree');
+    });
+
+    alexButton.addEventListener('click', function(){
+    let names = 'alexleigh';
+    pageOne.style.display='block';
+    chuzBoy.style.display='none';
+    chuzGirl.style.display='none';
+    nameBoy.style.display='none';
+    nameGirl.style.display='none';
+    thinkGender.style.display='none';
+    setTimeout(() => {
+        showOne.innerHTML= 'at the ripe age of 8, ' + names + ' takes up content creation.';}, 
+        1000);
+    setTimeout(() => {
+        showTwo.innerHTML= names + ' wants to make it big mystery unboxing.';},
+        2000);
+    setTimeout(() => {
+        showThree.innerHTML = 'do you want to give him money?';},
+        3100);
+    setTimeout(() => {
+        yesInvest.style.display='inline-block';
+        dontInvest.style.display='inline-block';},
+        3900);
+    document.appendChild('showOne');
+    document.appendChild('showTwo');
+    document.appendChild('showThree');
+    });
+
+
+
+
 
 
 //boy nut's story
@@ -224,39 +474,80 @@ nutleigh.addEventListener('click',
             flyingTime2.style.display='block';
         }, 500);
         setTimeout(() => {
-            girlCheese.style.display='block';
+            boyCheese.style.display='block';
         }, 1600);
         setTimeout(() => {
-            cheeseGirlattend.style.display='block';
-        }, 2600);
+            cheeseBoyattend.style.display='block';
+        }, 2900);
         setTimeout(() => {
-            no.style.display='block';
-        }, 3500)
+            no2.style.display='block';
+        }, 3700)
     });
     no2.addEventListener('click',
     function(){
         yo6Nut2.style.display='none';
         noAttend2.style.display='block';
+        setTimeout(() => {
+            greatNewsboy.style.display='block';
+        }, 500);
+        setTimeout(() => {
+            resentBoy.style.display='block';
+        }, 1800);
+        setTimeout(() => {
+            twenty6Boy.style.display='block';
+        }, 3000);
+        setTimeout(() => {
+            worldBestboy.style.display='block';
+        }, 4700);
+        setTimeout(() => {
+            nutSentencedboy.style.display='block';
+        }, 5900);
+        setTimeout(() => {
+            bailHisquest.style.display='block';
+        }, 8400);
         noBail2.style.display='inline';
     });
 
 noBail2.addEventListener('click',
     function(){
         noAttend2.style.display='none';
-        inJail2.style.display='block'
+        inJail2.style.display='block';
+        setTimeout(() => {
+            serveBoy.style.display='block';
+        }, 1000);
+        setTimeout(() => {
+            retry2.style.display='block';
+        }, 1800);
     });
 
 retry2.addEventListener('click',
     function(){
         openPage.style.display='block';
         inJail2.style.display='none';
+        retryJail2.style.display='none';
+        outJail2.style.display='none';
     });
 
 yesBail2.addEventListener('click', 
     function (){
         noAttend2.style.display = 'none';
         outJail2.style.display = 'block';
-        retryJail2.style.display='block';
+        setTimeout(() => {
+            lookUpboy.style.display='block';
+        }, 600);
+        setTimeout(() => {
+            thanksBoy.style.display='block';
+        }, 1800);
+        setTimeout(() => {
+            peanutBoy.style.display='block';
+        }, 3400);
+        setTimeout(() => {
+            retireBoy.style.display='block';
+        }, 4900);
+        setTimeout(() => {
+            retryJail2.style.display='block';
+            endBailboy.style.display='block';
+        }, 5900);
     });
 
 retryJail2.addEventListener('click',
@@ -288,10 +579,10 @@ nutleigh2.addEventListener('click',
         }, 1600);
         setTimeout(() => {
             cheeseGirlattend.style.display='block';
-        }, 2600);
+        }, 2900);
         setTimeout(() => {
             no.style.display='block';
-        }, 3500)
+        }, 3700)
     });
 
 no.addEventListener('click',
@@ -309,15 +600,14 @@ no.addEventListener('click',
         }, 3000);
         setTimeout(() => {
             worldBestgirl.style.display='block';
-        }, 4000);
+        }, 4700);
         setTimeout(() => {
             nutSentencedgirl.style.display='block';
-        }, 5100);
+        }, 5900);
         setTimeout(() => {
             bailHerquest.style.display='block';
-        }, 7900);
+        }, 8400);
         noBail.style.display='inline';
-
     });
 
 noBail.addEventListener('click',
